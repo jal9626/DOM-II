@@ -31,8 +31,10 @@ button[2].addEventListener('mouseleave', (event) => {
     button[2].style.color = 'white';
 })
 
-let navUnfixed = document.querySelector('.mainNavigation');
-console.log(navUnfixed);
+// let navUnfixed = document.querySelector('.main-navigation');
+// navUnfixed.addEventListener('wheel', (event) => {
+//     navUnfixed.style.position = 'absolute';
+// })
 
 let images = document.querySelectorAll('img');
 images[0].addEventListener('wheel', (event) => {
@@ -44,4 +46,17 @@ window.addEventListener('load', (event) => {
     console.log('All resources finished loading');
 })
 
+let h2 = document.querySelectorAll('h2');
+console.log(h2);
+h2[0].addEventListener('resize', (event) => {
+    h2[0].style.color = 'red';
+}) //?
+
+h2[0].addEventListener('scroll', (event) => {
+    h2[0].style.fontSize = '4rem';
+})
+
+button[0].addEventListener('dblclick', (event) => {
+    alert('you have double-clicked the button');
+})
 
